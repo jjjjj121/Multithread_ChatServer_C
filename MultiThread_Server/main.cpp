@@ -57,9 +57,13 @@ unsigned WINAPI ClientThread(void* Parameter)
 	SOCKET ClientSocket = *(SOCKET*)Parameter;
 
 	char Buffer[1024] = { 0, };
+	
 
 	while (true)
 	{
+		//버퍼 초기화
+		memset(Buffer, 0, sizeof(Buffer));
+
 		int RecvLength = recv(ClientSocket, Buffer, sizeof(Buffer), 0);
 
 		if (RecvLength == 0) //클라이언트가 연결이 해제된 것
