@@ -24,6 +24,7 @@
     <ProjectGuid>{9eac89de-16c3-432a-9a06-c379c4d7893a}</ProjectGuid>
     <RootNamespace>TreadMultiplexingClient</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>MultiTread_Client</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
